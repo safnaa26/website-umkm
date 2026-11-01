@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Produk Kopi Ku - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
     <header class="site-header">
       <nav class="nav" aria-label="Navigasi utama">
-        <a class="brand" href="index.html">Kopi Ku</a>
-        <ul>
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/logo.png" width="40" height="40" alt="" />
+          <span>Kopi Ku</span>
+        </a>
+
+        <label class="nav-toggle">
+          <input class="nav-check" type="checkbox" aria-label="Buka atau tutup menu navigasi" aria-controls="nav-menu" />
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </label>
+
+        <ul id="nav-menu">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang.html">Tentang Kami</a></li>
           <li><a aria-current="page" href="produk.html">Produk</a></li>
@@ -25,6 +37,15 @@
     <main id="konten" class="page">
       <h1>Produk Kopi Ku</h1>
       <p>Temukan pilihan kopi yang cocok untuk menemani aktivitas sehari-hari.</p>
+
+      <section class="section" aria-labelledby="produk-dinamis-title">
+        <div class="section-header">
+          <p class="eyebrow">Data JavaScript</p>
+          <h2 id="produk-dinamis-title">Produk dari Data Lokal</h2>
+          <p id="produk-ringkasan">Data produk akan dimuat melalui JavaScript.</p>
+        </div>
+        <div id="produk-dinamis" class="js-product-grid"></div>
+      </section>
 
       <section aria-labelledby="kategori-title">
         <h2 id="kategori-title">Kategori Produk</h2>

@@ -6,13 +6,25 @@
     <title>Kontak Kopi Ku - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/form.js" defer></script>
+    <script src="js/app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
     <header class="site-header">
       <nav class="nav" aria-label="Navigasi utama">
-        <a class="brand" href="index.html">Kopi Ku</a>
-        <ul>
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/logo.png" width="40" height="40" alt="" />
+          <span>Kopi Ku</span>
+        </a>
+
+        <label class="nav-toggle">
+          <input class="nav-check" type="checkbox" aria-label="Buka atau tutup menu navigasi" aria-controls="nav-menu" />
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </label>
+
+        <ul id="nav-menu">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang.html">Tentang Kami</a></li>
           <li><a href="produk.html">Produk</a></li>
