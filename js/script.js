@@ -2,7 +2,7 @@ const promoButton = document.querySelector("#promoButton");
 
 if (promoButton) {
   promoButton.addEventListener("click", () => {
-    promoButton.textContent = "Promo: Beli 2 gratis tester!";
+    promoButton.textContent = "Promo: Beli 2 Diskon 15%";
     console.log("Promo Kopi Ku berhasil ditampilkan.");
   });
 }
