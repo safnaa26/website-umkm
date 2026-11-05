@@ -461,3 +461,14 @@ fieldset label { display: block; margin-bottom: var(--space-1); }
   background: #fee2e2;
   color: #991b1b;
 }
+/* ===== P10: Pendukung output JavaScript ===== */
+.category-note {
+  margin-block: var(--space-1);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+#produk-unggulan {
+  font-weight: 700;
+  color: var(--color-primary, #6f3b1f);
+}
