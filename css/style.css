@@ -461,7 +461,7 @@ fieldset label { display: block; margin-bottom: var(--space-1); }
   background: #fee2e2;
   color: #991b1b;
 }
-/* ===== P10: Pendukung output JavaScript ===== */
+
 .category-note {
   margin-block: var(--space-1);
   color: var(--color-muted);
@@ -472,3 +472,55 @@ fieldset label { display: block; margin-bottom: var(--space-1); }
   font-weight: 700;
   color: var(--color-primary, #6f3b1f);
 }
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1rem 1.5rem;
+}
+
+.filter-button {
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+  border-color: var(--color-primary);
+}
+
+.filter-button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.filter-button.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  border: 1px dashed var(--color-muted);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: var(--color-surface);
+  color: var(--color-muted);
+}
+
+.ghost-button {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+  padding: 0.4rem var(--space-2);
+  font-size: 0.875rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+}
+.ghost-button:hover { background: var(--color-accent-soft); }
