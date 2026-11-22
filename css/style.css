@@ -524,3 +524,64 @@ fieldset label { display: block; margin-bottom: var(--space-1); }
   border: 1px solid var(--color-border);
 }
 .ghost-button:hover { background: var(--color-accent-soft); }
+
+.field-error,
+.form-feedback {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.field-error {
+  min-height: 1.4rem;
+}
+
+[aria-invalid="true"] {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 3px rgb(185 28 28 / 15%);
+}
+
+.field input[aria-invalid="true"],
+.field select[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: #b91c1c;
+}
+
+.form-feedback.success {
+  color: #166534;
+}
+
+.check-field { margin-bottom: var(--space-3); }
+.check-field label {
+  display: flex;
+  gap: var(--space-1);
+  align-items: flex-start;
+  font-weight: 700;
+}
+
+.panel {
+  margin-block: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.preferensi-status {
+  margin-block: var(--space-1);
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.secondary-button {
+  background: transparent;
+  border: 1px solid var(--color-border);
+}
+.secondary-button:hover { background: var(--color-accent-soft); }
